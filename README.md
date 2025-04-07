@@ -1,12 +1,12 @@
 # Updates 07.04.2025:
 ## ImageProblem
-Try to repair Problem with Images https://github.com/fastxl2024/mass-search-card/issues/1
-Changed hacs-json
-New Folder
+Try to repair Problem with Images https://github.com/fastxl2024/mass-search-card/issues/1<br>
+Changed hacs-json<br>
+New Folder<br>
 
 
 ## extended Translation:
-
+  ```sh
             de: {
                 album_label: 'Album',
                 artist_label: 'Künstler',
@@ -28,23 +28,27 @@ New Folder
                 track_label: 'Titel',
                 unknown_artist: 'Unbekannter Künstler',
                 unknown_duration: 'Unbekannte Dauer',
+                error_media_player: 'Keine Media Player verfügbar',
             },
+  ```
 ## missing Translations:
 
-        titleText.textContent = t.title_text;
-
 line: 747
+  ```sh
             noResults.textContent = 'No results found.';
             noResults.textContent = t.no_results;
-
+  ```
 line: 753
+  ```sh
         closeButton.textContent = 'Close';
         closeButton.textContent = t.close_button;
+  ```
 
 line: 834
+  ```sh
             noOption.textContent = 'Geen mediaplayers beschikbaar';
             noOption.textContent = t.error_media_player;
-
+  ```
 ##New Translation needed:
 suggestion
 error_media_player: 'Keine Media Player verfügbar',
