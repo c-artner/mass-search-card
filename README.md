@@ -33,19 +33,19 @@ New Folder
 
         titleText.textContent = t.title_text;
 
-747
+line: 747
             noResults.textContent = 'No results found.';
             noResults.textContent = t.no_results;
 
-753
+line: 753
         closeButton.textContent = 'Close';
         closeButton.textContent = t.close_button;
 
-834
+line: 834
             noOption.textContent = 'Geen mediaplayers beschikbaar';
             noOption.textContent = t.error_media_player;
 
-New Translation needed:
+##New Translation needed:
 suggestion
 error_media_player: 'Keine Media Player verfügbar',
 
