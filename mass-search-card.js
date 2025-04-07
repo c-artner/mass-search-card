@@ -51,6 +51,7 @@ class MassSearchCard extends HTMLElement {
                 track_label: 'Nummer',
                 unknown_artist: 'Onbekende artiest',
                 unknown_duration: 'Onbekende duur',
+                error_media_player: 'Geen mediaplayers beschikbaar',
             },
             cs: {
                 album_label: 'Album',
@@ -73,6 +74,7 @@ class MassSearchCard extends HTMLElement {
                 track_label: 'Skladba',
                 unknown_artist: 'Neznámý umělec',
                 unknown_duration: 'Neznámá délka',
+                error_media_player: 'Nejsou k dispozici žádné mediální přehrávače',
             },
             en: {
                 album_label: 'Album',
@@ -95,6 +97,7 @@ class MassSearchCard extends HTMLElement {
                 track_label: 'Track',
                 unknown_artist: 'Unknown artist',
                 unknown_duration: 'Unknown duration',
+                error_media_player: 'No media players available',
             },
             sv: {
                 album_label: 'Album',
@@ -117,6 +120,7 @@ class MassSearchCard extends HTMLElement {
                 track_label: 'Spår',
                 unknown_artist: 'Okänd artist',
                 unknown_duration: 'Okänd varaktighet',
+                error_media_player: 'Inga mediaspelare tillgängliga',
             },
             cz: {
                 album_label: 'Album',
@@ -139,6 +143,7 @@ class MassSearchCard extends HTMLElement {
                 track_label: 'Skladba',
                 unknown_artist: 'Neznámý umělec',
                 unknown_duration: 'Neznámá délka',                
+                error_media_player: 'Nejsou k dispozici žádné mediální přehrávače',
             },              
             de: {
                 album_label: 'Album',
@@ -161,6 +166,7 @@ class MassSearchCard extends HTMLElement {
                 track_label: 'Titel',
                 unknown_artist: 'Unbekannter Künstler',
                 unknown_duration: 'Unbekannte Dauer',
+                error_media_player: 'Keine Media Player verfügbar',
             },
         };
       
@@ -766,13 +772,13 @@ class MassSearchCard extends HTMLElement {
             });
         } else {
             const noResults = document.createElement('p');
-            noResults.textContent = 'No results found.';
+            noResults.textContent = t.no_results;
             noResults.style.color = 'var(--primary-text-color)';
             popup.appendChild(noResults);
         }
 
         const closeButton = document.createElement('button');
-        closeButton.textContent = 'Close';
+        closeButton.textContent = t.close_button;
         closeButton.style.marginTop = '16px';
         closeButton.style.padding = '8px 16px';
         closeButton.style.border = 'none';
@@ -853,7 +859,7 @@ class MassSearchCard extends HTMLElement {
             });
         } else {
             const noOption = document.createElement('div');
-            noOption.textContent = 'Geen mediaplayers beschikbaar';
+            noOption.textContent = t.error_media_player;
             noOption.style.padding = '8px';
             noOption.style.color = 'var(--disabled-text-color)';
             dropdownContent1.appendChild(noOption);
