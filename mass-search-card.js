@@ -140,7 +140,29 @@ class MassSearchCard extends HTMLElement {
                 unknown_artist: 'Neznámý umělec',
                 unknown_duration: 'Neznámá délka',                
             },              
-          };
+            de: {
+                album_label: 'Album',
+                artist_label: 'Künstler',
+                close_button: 'Schließen',
+                dropdown_label_media_player: 'Wählen Sie einen Media Player',
+                error_fetching: 'Beim Abrufen der Ergebnisse ist ein Fehler aufgetreten.',
+                library_only_label: 'Lokale Bibliothek',
+                media_type: 'Medientyp',
+                no_results: 'Keine Ergebnisse gefunden.',
+                playing_media: 'Abgespielte Medien:',
+                playlist_label: 'Wiedergabeliste',
+                popup_title: 'Suchergebnisse für:',
+                radio_label: 'Radio',
+                results_label: 'Anzahl der Ergebnisse',
+                search_button: 'Suche',
+                search_placeholder: 'Geben Sie hier Ihren Suchbegriff ein...',
+                select_media_type: 'Medientyp auswählen',
+                title_text: 'in Music Assistant suchen',
+                track_label: 'Titel',
+                unknown_artist: 'Unbekannter Künstler',
+                unknown_duration: 'Unbekannte Dauer',
+            },
+        };
       
           const language = this.config.language || this.hass?.language || 'en';
           const t = translations[language] || translations.en;
