@@ -1,4 +1,4 @@
-class MassSearchCard extends HTMLElement {
+class MassSearchCardCA extends HTMLElement {
     async setConfig(config) {
         this.config = config;
 
@@ -880,4 +880,4 @@ class MassSearchCard extends HTMLElement {
         return 8; // Definieer de totale grootte van de gecombineerde kaarten
     }
 }
-customElements.define('mass-search-cardCA', MassSearchCard);
+customElements.define('mass-search-cardCA', MassSearchCardCA);
